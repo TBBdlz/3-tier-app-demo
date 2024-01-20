@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+    fastapi:
+        build: ./fastapi-api
+        ports:
+            - "5000:5000"
+
+    express:
+        build: ./node-api
+        ports:
+            - "3000:3000"
+
+    vite-react:
+        build: ./react-front
+        ports:
+            - "80:80"
